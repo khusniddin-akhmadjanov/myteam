@@ -1,0 +1,271 @@
+.info-box {
+  width: 100%;
+  background: $color-deep-jungle-green;
+}
+
+.info-section-wrapper {
+  max-width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.info-outline-img {
+  position: relative;
+  left: -15%;
+  top: -90px;
+}
+
+
+.info__title {
+  font-family: "Livvic";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #fff;
+}
+
+.info-colorful-text {
+  color: #79c8c7;
+}
+
+.info__list {
+  @include list-unstyled;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info__item {
+  margin-top: 56px;
+}
+
+.info__item-img {}
+
+.info__item-text {
+  width: 350px;
+  font-family: "Livvic";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  top: -40px;
+}
+
+.info__item-title {
+  font-family: "Livvic";
+  font-size: 18px;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+  margin-top: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #79C8C7;
+  position: relative;
+  top: -40px;
+}
+
+.info__item-position {
+  font-family: "Livvic";
+  font-size: 13px;
+  padding: 0;
+  margin: 0;
+  margin-top: 2px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  top: -40px;
+}
+
+.info__user-img {
+  padding: 0;
+  margin: 0;
+  width: 62px;
+  height: 62px;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: -40px;
+}
+
+.info__bottom-img {
+  width: 200px;
+  height: 200px;
+  transform: translate(1012px);
+}
+
+.info-box {
+  background-image: url("../../images/info-bottom-img.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 740px;
+  padding-bottom: 150px;
+}
+
+@include breakpoint-down (1070px) {
+  .info__list {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
+
+
+@include breakpoint-down (768px) {
+  .info-outline-img {
+    position: relative;
+    left: -20px;
+    top: 0px;
+  }
+
+  .info__title {
+    font-family: "Livvic";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: center;
+    width: 573px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .info__list {
+    display: block;
+  }
+
+  .info__item {
+    text-align: center;
+  }
+
+  .info__item-text { 
+    width: 573px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .info-box {
+    background-image: url("../../images/info-bottom-img.svg");
+    background-repeat: no-repeat;
+    background-position: 100% 1410px;
+  }
+
+}
+
+
+@include breakpoint-down (600px) {
+
+  .info__title {
+    font-family: "Livvic";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: center;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .info__item-text { 
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+
+@include breakpoint-down (480px) {
+
+  .info__title {
+    font-family: "Livvic";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: center;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .info__item-text { 
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+
+@include breakpoint-down (375px) {
+
+  .info__title {
+    font-family: "Livvic";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: center;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .info__item-text { 
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .info-box {
+    background-image: url("../../images/info-bottom-img.svg");
+    background-repeat: no-repeat;
+    background-position: 100% 1630px;
+  }
+  
+}
+
+@include breakpoint-down (320px) {
+
+  .info__title {
+    font-family: "Livvic";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: center;
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .info__item-text { 
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+}

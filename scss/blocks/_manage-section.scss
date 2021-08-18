@@ -1,0 +1,266 @@
+.manage-section-wrapper {
+  width: 100%;
+  position: relative;
+  background-color: $color-Sakramento;
+  padding-bottom: 100px;
+}
+
+.manage-section {
+  padding-top: 140px;
+}
+
+.manage__box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.manage__line {
+  width: 50px;
+  height: 4px;
+  background-color: $color-light-caral;
+  position: absolute;
+}
+
+.manage__title {
+  font-family: "Livvic";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #fff;
+  width: 445px;
+}
+
+.manage__item {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.manage__item-left {
+  display: inline-block;
+  margin-right: 23px;
+}
+
+.manage__item-img {
+  width: 72px;
+  height: 72px;
+  display: block;
+}
+
+.manage__item-title {
+  font-family: "Livvic";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+  color: $color-light-caral;
+}
+
+.manage__item-text {
+  font-family: Livvic;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #fff;
+}
+
+.manage-section-wrapper {
+  background-image: url("../../images/manage-bottom-img.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 675px) 435px;
+}
+
+@include breakpoint-down (768px) {
+  .manage__box {
+    display: block;
+  }
+
+  .manage__title {
+    font-family: "Livvic";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    width: 445px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 120px;
+  }
+
+
+  .manage__line {
+    position: absolute;
+    left: 120px;
+    top: -32px;
+  }
+
+  .manage-section-wrapper {
+    background-image: url("../../images/manage-bottom-img.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 385px) 0;
+  }
+
+  .manage__item-img {
+    position: relative;
+    width: 56px;
+    height: 56px;
+  }
+
+  .manage__item-title {
+    font-family: "Livvic";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+
+  .manage__item-text {
+    width: 478px;
+    font-family: "Livvic";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+
+}
+
+@include breakpoint-down (620px) {
+
+  .manage__line {
+    margin-left: -50px;
+  }
+
+  .manage__title {
+    width: 445px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .manage__item {
+    display: block;
+    text-align: center;
+  }
+
+  .manage__item-title {
+    text-align: center;
+  }
+
+  .manage__item-text {
+    text-align: center;
+  }
+
+}
+
+
+@include breakpoint-down (540px) {
+
+  .manage__title {
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .manage__item-title {
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .manage__item-text {
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+}
+
+
+@include breakpoint-down (420px) {
+
+  .manage__title {
+    width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    margin-left: 10px;
+  }
+
+  .manage__line {
+    margin-left: -110px;
+  }
+
+  .manage__item {
+    margin-left: -45px;
+  }
+
+  .manage__item-title {
+    width: 327px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .manage__item-text {
+    width: 327px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .manage-section-wrapper {
+    background-image: url("../../images/manage-bottom-img.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 210px) 0;
+  }
+}
+
+@include breakpoint-down (375px) {
+
+  .manage__title {
+    margin-top: -50px;
+  }
+
+  .manage__item {
+    margin-left: -45px;
+  }
+
+  .manage__item-title {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .manage__item-text {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .manage-section-wrapper {
+    background-image: url("../../images/manage-bottom-img.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 187px) 0;
+  }
+}

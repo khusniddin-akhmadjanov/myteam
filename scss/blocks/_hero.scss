@@ -1,0 +1,240 @@
+.hero-section-wrapper {
+  display: flex;
+  align-items: center;
+  padding-top: 129px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #014E56;
+
+}
+
+.hero::before {
+  content: url("../../images/site-hero-img-1.png");
+  position: relative;
+  left: -250px;
+}
+
+.hero-section-wrapper{
+  background-image: url("../../images/site-hero-img-2.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 360px) calc(50% + 320px);
+  padding-bottom: 120px;
+ }  
+
+.hero-outside-img {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  top: -110px;
+  transform: translate(-230px);
+}
+
+.hero__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: -190px;
+}
+
+.hero__title {
+  width: 600px;
+  font-family: "Livvic";
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+.hero__title-colorful {
+  color: $color-light-caral;
+}
+
+
+.hero__line {
+  width: 50px;
+  height: 4px;
+  background-color: $color-Rapture-blue;
+  position: absolute;
+  top: 8%;
+  left: 58%;
+}
+
+.hero__text {
+  width: 445px;
+  font-family: "Livvic";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0px;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  color: #fff;
+  margin-top: 80px;
+}
+
+.hero-cut-image {
+  position: relative;
+  display: none;
+}
+
+
+@include breakpoint-down (990px) {
+  .hero-section-wrapper{
+    background-image: url("../../images/site-hero-img-2.svg");
+    background-repeat: no-repeat;
+    background-position: 50% calc(50% + 330px);
+   }  
+
+}
+
+@include breakpoint-down (970px) {
+  .hero-outside-img {
+    display: none;
+  }
+
+  .hero-section {
+    transform: translate(5px);
+  }
+
+  .hero__title {
+    font-size: 84px;
+  }
+
+  .hero__text {
+    font-size: 15px;
+  }
+
+}
+
+@include breakpoint-down (768px) {
+  .hero__box {
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero__line {
+    display: none;
+  }
+
+  .hero__title {
+    width: 500px;
+    font-size: 64px;
+    line-height: 56px;
+    text-align: center;
+  }
+
+  .hero__text {
+    width: 500px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+  }
+
+  .hero__bottom-img {
+    position: relative;
+    left: 45%;
+  }
+
+  .hero-section-wrapper{
+    background-image: url("../../images/site-hero-img-2.svg");
+    background-repeat: no-repeat;
+    background-position: 50% calc(50% + 340px);
+   }  
+
+}
+
+
+@include breakpoint-down (540px) {
+  .hero__box {
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero__title {
+    width: 400px;
+  }
+
+  .hero__text {
+    width: 400px;
+  }
+
+  
+  .hero-section-wrapper{
+    background-image: url("../../images/site-hero-img-2.svg");
+    background-repeat: no-repeat;
+    background-position: 50% calc(50% + 350px);
+   }  
+
+}
+
+@include breakpoint-down (442px) {
+  .hero__box {
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 330px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero__title {
+    width: 330px;
+    font-size: 40px;
+  }
+
+  .hero__text {
+    width: 330px;
+    font-size: 15px;
+  }
+
+  .hero-section-wrapper{
+    background-image: url("../../images/site-hero-img-2.svg");
+    background-repeat: no-repeat;
+    background-position: 50% calc(50% + 350px);
+   }  
+
+
+}
+
+@include breakpoint-down (375px) {
+  .hero__box {
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: -5px;
+  }
+
+  .hero__title {
+    width: 280px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 18px;
+    line-height: 60px;
+    margin-left: -5px;
+  }
+
+  .hero__text {
+    width: 280px;
+    margin-left: -5px;
+    margin-top: 0;
+  }
+
+}

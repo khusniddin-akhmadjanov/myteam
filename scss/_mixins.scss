@@ -1,0 +1,30 @@
+@mixin list-unstyled {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@mixin  link-unstyled {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+@mixin site-logo-img {
+  display: block;
+  width: 160px;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+//MEDIA UCHUN MIXIN 
+
+@mixin  breakpoint-down ($screen-width) {
+  
+  @media only screen and (max-width:$screen-width) {
+    @content
+  }
+
+}
+

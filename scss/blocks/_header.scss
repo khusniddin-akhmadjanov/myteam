@@ -1,0 +1,142 @@
+header {
+  background-color:  #014E56;
+  
+}
+
+
+.header-section {
+  padding-top: 73px;
+  position: relative;
+  width: 1110px;  
+  padding-bottom: 20px;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-logo {
+  display: inline-block;
+}
+
+.site-logo-img {
+  @include site-logo-img;
+}
+
+.header__nav {
+  padding: 0;
+  margin: 0;
+}
+
+.header__list {
+  @include list-unstyled;
+  display: flex;
+  align-items: center;
+}
+
+.header__item~.header__item {
+  margin-left: 40px;
+}
+
+.header__link {
+  @include link-unstyled;
+  color: #fff;
+  font-family: "Livvic";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.header__link:hover {
+  color: #e67e7e;
+  transition: 0.3s ease;
+}
+
+.header__button {
+  background-color: transparent;
+  border-radius: 24px;
+  border: 2px solid #fff;
+  color: #fff;
+  font-family: "Livvic";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding: 8px 31px;
+  cursor: pointer;
+  outline: none;
+}
+
+.header__button:hover {
+  background-color: #fff;
+  color:  #002529;
+  transition: 0.3s ease;
+}
+
+.header__icon {
+  display: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.header__hamburger-img {
+  display: none;
+  background-color: transparent;
+}
+
+@include breakpoint-down (950px) {
+  .header__nav {
+    margin-left: 0;
+  }
+}
+
+@include breakpoint-down (768px) {
+  .header__nav {
+    margin-left: -100px;
+  }
+
+  .site-logo-img {
+    width: 127px;
+    height: 32px;
+  }
+}
+
+@include breakpoint-down (600px) {
+  .header__nav {
+    margin-left: 0;
+  }
+}
+
+@include breakpoint-down (500px) {
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__button {
+    display: none;
+  }
+
+  .header__icon {
+    display: block;
+  }
+
+}
+
+@include breakpoint-down (375px) {
+  .header-logo {
+    margin-left: -100px;
+  }
+  
+}

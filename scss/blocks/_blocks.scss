@@ -1,4 +1,7 @@
 @import "visually-hidden";
+
+//HOME PAGE
+
 @import "body";
 @import "container";
 @import "header";
@@ -7,3 +10,11 @@
 @import "info-section";
 @import "start-section";
 @import "footer-section";
+
+
+//ABOUT PAGE 
+
+@import "about-hero-section";
+@import "about-director";
+@import "client-section";
+@import "contact";

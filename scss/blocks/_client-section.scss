@@ -1,0 +1,130 @@
+.client-section-wrapper {
+  background-color: $color-dark-green;
+  background-image: url("../../images/manage-bottom-img.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.client {
+  padding-top: 140px;
+  padding-bottom: 130px;
+}
+
+.client__title {
+  font-family: "Livvic";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0px;
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+  text-align: center;
+}
+
+.client__list {
+  @include list-unstyled;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  margin-top: 70px;
+}
+
+@include breakpoint-down (870px) {
+  .client__title {
+    font-size: 48px;
+  }
+
+  .client-section-wrapper {
+    background-color: $color-dark-green;
+    background-image: url("../../images/manage-bottom-img.png");
+    background-repeat: no-repeat;
+    background-position: 0 -145px;
+  }
+
+  .client__list {
+    padding: 0;
+    margin: 0;
+    margin-top: 52px;
+  }
+
+  .client__item:nth-child(1) {
+    width: 103px;
+    height: 17px;
+  }
+  
+  .client__item:nth-child(2) {
+    width: 114px;
+    height: 14px;
+  }
+  
+  .client__item:nth-child(3) {
+    width: 112px;
+    height: 17px;
+  }
+  
+  .client__item:nth-child(4) {
+    width: 103px;
+    height: 17px;
+  }
+  
+  .client__item:nth-child(5) {
+    width: 61px;
+    height: 28px;
+  }
+  
+}
+
+@include breakpoint-down (540px) {
+  .client__list {
+    display: block;
+  }
+
+  .client-section-wrapper {
+    background-color: $color-dark-green;
+    background-image: url("../../images/manage-bottom-img.png");
+    background-repeat: no-repeat;
+    background-position: -100px -140px;
+  }
+
+  .client__item {
+    margin-bottom: 56px;
+  }
+
+  .client__item:nth-child(1) {
+    width: 147px;
+    height: 24px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .client__item:nth-child(2) {
+    width: 162px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .client__item:nth-child(3) {
+    width: 160px;
+    height: 24px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .client__item:nth-child(4) {
+    width: 147px;
+    height: 24px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .client__item:nth-child(5) {
+    width: 87px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

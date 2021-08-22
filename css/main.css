@@ -1832,7 +1832,7 @@ footer {
   padding-bottom: 168px;
   background-image: url("../../images/info-outline-img.svg");
   background-repeat: no-repeat;
-  background-position: 100%  1025px;
+  background-position: 100% 1025px;
 }
 
 .about-director__title {
@@ -1880,13 +1880,85 @@ footer {
   position: relative;
 }
 
-.about-director__item:hover {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  -webkit-transition: 1s ease-out;
-  transition: 1s ease-out;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+.card-front {
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.card-back {
+  display: block;
+  font-size: 1.2rem;
+  position: absolute;
+  height: 0;
+  top: 0;
+  opacity: 0;
+  padding: 18px 8%;
+  background-color: #002529;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.card-back-title {
+  font-family: "Livvic";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #79C8C7;
+}
+
+.card-back-text {
+  font-family: "Livvic";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.card-back-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-back-item ~ .card-back-item {
+  margin-left: 10px;
+}
+
+.about-director__item:hover .card-back {
+  opacity: 1;
+  height: 100%;
+}
+
+.about-director__item:hover .about-director__plus-icon {
+  z-index: 1;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+  background-color: #79C8C7;
+}
+
+.about-director__item:hover .about-director__plus-img {
+  z-index: 1;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
 }
 
 .about-director__img {
@@ -1947,7 +2019,7 @@ footer {
     padding-bottom: 168px;
     background-image: url("../../images/info-outline-img.svg");
     background-repeat: no-repeat;
-    background-position: 100%  1375px;
+    background-position: 100% 1375px;
   }
 }
 
@@ -1991,7 +2063,7 @@ footer {
     padding-bottom: 168px;
     background-image: url("../../images/info-outline-img.svg");
     background-repeat: no-repeat;
-    background-position: 100%  2440px;
+    background-position: 100% 2440px;
   }
   .about-director__item {
     width: 281px;

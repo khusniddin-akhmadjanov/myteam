@@ -13,7 +13,7 @@
   padding-bottom: 168px;
   background-image: url("../../images/info-outline-img.svg");
   background-repeat: no-repeat;
-  background-position: 100%  1025px;
+  background-position: 100% 1025px;
 }
 
 .about-director {}
@@ -54,10 +54,74 @@
   position: relative;
 }
 
-.about-director__item:hover{
-  transform: rotateY(180deg);
-  transition: 1s ease-out;
-  backface-visibility: hidden;
+.card-front {
+  position: relative;
+  object-fit: cover;
+  display: block;
+}
+
+.card-back {
+  display: block;
+  font-size: 1.2rem;
+  position: absolute;
+  height: 0;
+  top: 0;
+  opacity: 0;
+  padding: 18px 8%;
+  background-color: #002529;
+  transition: 0.5s ease;
+}
+
+.card-back-title {
+  font-family: "Livvic";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #79C8C7;
+}
+
+.card-back-text {
+  font-family: "Livvic";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.card-back-list {
+  @include list-unstyled;
+  display: flex;
+  align-items: center;
+  width: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-back-item ~ .card-back-item {
+  margin-left: 10px;
+}
+
+.about-director__item:hover .card-back {
+  opacity: 1;
+  height: 100%;
+}
+
+.about-director__item:hover .about-director__plus-icon {
+  z-index: 1;
+  transition: 0.5s ease-out;
+  background-color: #79C8C7;
+}
+
+.about-director__item:hover .about-director__plus-img {
+  z-index: 1;
+  transition: 0.5s ease-out;
+  transform: rotateZ(45deg);
 }
 
 .about-director__img {
@@ -103,6 +167,7 @@
   cursor: pointer;
 }
 
+
 @include breakpoint-down (1100px) {
   .about-director-section-wrapper {
     background-image: url("../../images/about-director-bg.png");
@@ -118,7 +183,7 @@
     padding-bottom: 168px;
     background-image: url("../../images/info-outline-img.svg");
     background-repeat: no-repeat;
-    background-position: 100%  1375px;
+    background-position: 100% 1375px;
   }
 }
 
@@ -169,7 +234,7 @@
     padding-bottom: 168px;
     background-image: url("../../images/info-outline-img.svg");
     background-repeat: no-repeat;
-    background-position: 100%  2440px;
+    background-position: 100% 2440px;
   }
 
   .about-director__item {

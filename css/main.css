@@ -791,7 +791,9 @@ header {
     width: 280px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
     margin-left: -5px;
+    margin-left: 25px;
   }
   .hero__title {
     width: 280px;
@@ -806,6 +808,18 @@ header {
     width: 280px;
     margin-left: -5px;
     margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .hero__box {
+    margin-left: 15px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .hero__box {
+    margin-left: 5px;
   }
 }
 
